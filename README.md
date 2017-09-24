@@ -16,6 +16,10 @@ To use, simply hit the endpoint with a web browser or curl.
 
 `http://www.mydomain.com:8080/?repo=MyRepo&branch=MyBranch`
 
+Run from cron with:
+
+`curl -sm 30 mydomain.com:8080/?repo=MyRepo&branch=MyBranch`
+
 
 ### Disclaimer
 This service exposes your web server directly to the internet on port 8080.
