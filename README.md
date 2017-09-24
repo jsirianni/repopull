@@ -20,6 +20,11 @@ Run from cron with:
 
 `curl -sm 30 mydomain.com:8080/?repo=MyRepo&branch=MyBranch`
 
+#### install.sh
+This script will install repopull to `/usr/local/bin` and create a systemd service.
+
+#### upgrade.sh
+This script will `git pull`, stop and replace the repopull binary and then start the service.
 
 ### Disclaimer
 This service exposes your web server directly to the internet on port 8080.
