@@ -13,7 +13,7 @@ This program was written quickly to fit a specific use case for a school project
 To use, simply hit the endpoint with a web browser or curl.
 
 `curl -v mydomain.com:8080/?repo=MyRepo&branch=MyBranch`
-\n
+
 `http://www.mydomain.com:8080/?repo=MyRepo&branch=MyBranch`
 
 
