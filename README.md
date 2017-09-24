@@ -13,9 +13,10 @@ This program was written quickly to fit a specific use case for a school project
 To use, simply hit the endpoint with a web browser or curl.
 
 `curl -v mydomain.com:8080/?repo=MyRepo&branch=MyBranch`
+\n
 `http://www.mydomain.com:8080/?repo=MyRepo&branch=MyBranch`
 
 
 ### Disclaimer
-This service exposes your web server directly to the internet on port 8080. 
+This service exposes your web server directly to the internet on port 8080.
 Only use this service if you understand the implications that this brings.
