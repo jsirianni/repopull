@@ -18,6 +18,11 @@ func repoUpdate(w http.ResponseWriter, r *http.Request) {
       var branch string = r.URL.Query().Get("branch")
       var dir string = "/var/www/html/" + repo
 
+      // Quit if bad query string
+      if len(repo) == 0 || len(branch) == 0 {
+            return
+      }
+
       log("Connection from " + socket[0])
 
       cmd := exec.Command("git", "pull")
@@ -49,9 +54,6 @@ func repoUpdate(w http.ResponseWriter, r *http.Request) {
             io.WriteString(w, "https://gv-capstone.duckdns.org")
             io.WriteString(w, "\n\n")
       }
-
-
-
 }
 
 func log(message string) {
